@@ -61,3 +61,24 @@
 // console.log(sum1(sumarray));
 
 
+// function RSB(){
+//     // arguments
+//     let sum=0;
+//     for(let i=0;i<arguments.length;i++){
+//         sum=sum+arguments[i];
+//     }
+//     return sum;
+// }
+// console.log(RSB(1,2,3,4,4,5,6))
+
+
+// Arrow functions
+// let x= ()=>{
+
+// }
+
+// let rsb =(var1)=>{
+//     console.log(`main allien hu ${var1} planet ka` );
+// }
+// rsb('K425');
+
