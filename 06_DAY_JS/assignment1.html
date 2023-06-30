@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClickedCirle</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100%;
+            background-color: black;
+        }
+        .circle{
+            width: 50px;
+            height: 50px;
+            background-color: #adff2f;
+            border-radius: 50px;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // selecting body of page so that we can append cicle 
+        let body=document.querySelector('body');
+        // adding click event to body 
+        body.addEventListener("click",(event)=>{
+            // makeing a div for circle 
+            let element=document.createElement('div');
+            // adding circle class of css
+            element.classList.add('circle');
+            // finding coordiante of click event from left and top in the body 
+            element.style.left=event.clientX+"px";
+            element.style.top=event.clientY+"px";
+            // now at last we are append in the body  
+            body.appendChild(element);
+        })
+    </script>
+</body>
+</html>
