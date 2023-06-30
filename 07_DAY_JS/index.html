@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM-2</title>
+</head>
+<body>
+    <h1>Hello Javascript Bootcamp</h1>
+    <ul></ul>
+    <button onclick="maths()" id="fsjs2">Submit</button>
+    <p id="js"></p>
+
+    <script>
+        //insert inner HTML
+        const list=`
+            <li>Ranjeet</li>
+            <li>Harmeet</li>
+            <li>Jaspreet</li>
+        `;
+        const ul=document.querySelector('ul');
+        ul.innerHTML=list
+
+        // create an element on screen
+        let title=document.createElement('h1');
+        title.className='title';
+        title.style.fontSize='2rem';
+        title.style.color='blue';
+        title.textContent="creating a new element in DOM"
+        document.body.appendChild(title)
+
+        // hw remove child 
+
+
+        // for loop
+        for(let i=0;i<3;i++){
+            let para=document.createElement('p');
+            para.className="fsjs2";
+            para.style.fontSize="16px";
+            para.textContent=i;
+            console.log(para)
+            document.body.appendChild(para)
+        }
+ 
+        function maths(){
+            let value=prompt("Solve this 50-30");
+            if(value==20){
+                document.getElementById('js').innerText="Sucess Redirect";
+                document.getElementById('fsjs2').style.backgroundColor='Green';
+                document.getElementById('fsjs2').style.color='black';
+            }else{
+                document.getElementById('js').innerText="Abbey Salley math nhi aati";
+                document.getElementById('fsjs2').style.backgroundColor='red';
+            }
+        }
+
+
+    </script>
+</body>
+</html>

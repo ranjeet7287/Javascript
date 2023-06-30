@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom-3</title>
+</head>
+<body>
+
+    <h1>Learning Event Listner</h1>
+    <p id="js">Event Listner</p>
+
+    <script>
+        // Event Listner
+        // document.addEventListener("Event Action", Whom should i call)
+        document.addEventListener("dblclick",hello)
+        function hello(){
+            document.getElementById('js').innerText="Mouse Clicked";
+        }
+        
+        // HW make a small assingment using these event lisetener 
+        // -click
+        // -dblclick
+        // -mouseenter
+        // -mouseleave
+        // -mouseover
+        // -input
+        // -keydown
+        // -keyup
+        // -keypress
+        // -onload
+
+        document.addEventListener("mouseenter",hello)
+        function hello(){
+            document.getElementById('js').innerHTML='Hello mouse entred'
+        }
+
+        
+    </script>
+</body>
+</html>
