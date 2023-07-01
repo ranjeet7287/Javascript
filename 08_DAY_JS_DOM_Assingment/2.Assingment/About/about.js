@@ -9,3 +9,15 @@ accordian.forEach((element) => {
     }
   });
 });
+
+// Task 1
+// I have to add background color in the heading and description in the About page.
+accordian.forEach((val)=>{
+  val.style.backgroundColor="#9093f5"
+})
+let accordianPara=document.querySelectorAll(".accordian p");
+accordianPara.forEach((val)=>{
+  val.style.backgroundColor="#96d5f7"
+})
+
+
