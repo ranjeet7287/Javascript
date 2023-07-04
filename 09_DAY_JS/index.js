@@ -77,14 +77,56 @@
 // console.log(numSqr);
 
 // filter
+// const count=[
+//     "India",
+//     "Srilanka",
+//     "Nepal",
+//     "Bhutan",
+//     "Mayanmar",
+//     "Bangladesh",
+//     "Afgannistan",
+//     "Pakistan",
+//     "China"
+// ];
+
+// const store=count.filter((val)=>val.includes("stan"))
+// console.log(store); 
+
+// Reduce
+// const num=[1,2,3,4,5,6,7];
+// const sum=num.reduce((accu,curr)=> accu+curr,0);
+// console.log(sum);
+
+// Analogye 
+// accumilator -> accu (are like collecting wapper form student)
+// Current -> curr (are like student in line)
+// intail -> 0 intail value
 
 
-
-// reduce
 // find 
 // every 
 // some
-// sort
+
+// Sort
+// const names=["Ranjeet","Manav","Atharv","Akshay","Shashank"];
+// console.log(names.sort());
+// console.log(names.reverse());
 
 
 
+// de-structuring , Spread and Rest
+
+// const sci =[2.72,3.14,9.81,37,100];
+// let [e,pi,grav,bodytemp,boiltemp]=sci;
+// console.log(e,pi,grav,bodytemp,boiltemp);
+
+
+// to skip
+// const arr1=[1,2,3];
+// let [var1, ,var2]=arr1;
+// console.log(var1,var2);
+
+// const arr2=[1,2,3,4,5,6,7,8];
+// let [num1,num2,...rest]=arr2;
+// console.log(num1,num2);
+// console.log(rest);
