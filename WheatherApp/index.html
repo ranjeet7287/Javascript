@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Massum ki Jankari</title>
+</head>
+<body>
+    <div class="weatherpage">
+        <h1>Weather App</h1>
+        
+        <form class="searchData" onsubmit="getData(event)">
+            <input id="inputBox" type="text" placeholder="Enter your city">
+            <button>Search</button> 
+        </form>
+
+        <section class="cityWeatherData">
+            <div class="countryDetails details">
+
+                <div class="card">
+                    <p>Country Name</p>
+                    <p id="countryName">_</p>
+                </div>
+
+                <div class="card">
+                    <p>State Name</p>
+                    <p id="stateName">_</p>
+                </div>
+
+                <div class="card">
+                    <p>City Name</p>
+                    <p id="cityName">_</p>
+                </div>
+            </div>
+
+            <div class="weatherDetails details">
+
+                <div class="card">
+                    <p>Humidity</p>
+                    <p id="humidity">_</p>
+                </div>
+
+                <div class="card">
+                    <p>Wind Speed</p>
+                    <p><span id="windSpeed">_</span>KMH</p>
+                </div>
+
+                <div class="card">
+                    <p>Temp</p>
+                    <p><span id="temp">_</span>&#8451;</p>
+                </div>
+
+                <div>
+                    <img src="" alt="icon" width="25px" id="logoImage" style="margin: 5px;margin-bottom: 0px;"/>
+                    <p id="weatherStatus">_</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="./script.js">
+
+        </script>
+        
+    </div>
+</body>
+</html>
